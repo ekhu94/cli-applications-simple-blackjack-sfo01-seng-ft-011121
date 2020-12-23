@@ -33,6 +33,7 @@ end
 def hit?(total)
   prompt_user
   action = get_user_input
+  case 
 end
 
 def invalid_command
