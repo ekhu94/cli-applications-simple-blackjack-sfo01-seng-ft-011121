@@ -60,5 +60,6 @@ def runner
   unless num > 21
     num = hit?(num)
   end
+  end_game
 end
     
