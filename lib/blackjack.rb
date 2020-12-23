@@ -33,9 +33,15 @@ end
 def hit?(total)
   prompt_user
   action = get_user_input
-  case action
-    when 's'
-      
+  while true
+    if action == "s"
+      return total
+    elsif action == "h"
+      return total + deal_card
+    else
+      invalid_command
+      prompt_user
+    end
   end
 end
 
